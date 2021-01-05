@@ -18,7 +18,6 @@ function decomposeUrl(url) {
 
     return {
         protocol: url.substr(0, url.indexOf(":")),
-        ipAddress: url.indexOf("^(\\d|[1-9]\\d|1\\d\\d|2([0-4]\\d|5[0-5]))\\.(\\d|[1-9]\\d|1\\d\\d|2([0-4]\\d|5[0-5]))\\.(\\d|[1-9]\\d|1\\d\\d|2([0-4]\\d|5[0-5]))\\.(\\d|[1-9]\\d|1\\d\\d|2([0-4]\\d|5[0-5]))$"),
         targetFile: targetFile ? targetFile : null,
         argumentsFile: argumentsFile ? argumentsFile : null,
         folderTree: folderTree && folderTree.length ? folderTree : null,
